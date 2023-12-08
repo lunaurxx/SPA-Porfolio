@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spa portfolio</title>
+
+    <Style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:pink;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color:pink;
+        }
+
+        .pic {
+            height: 500px;
+        }
+
+        main {
+            background-color: pink;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            margin-bottom: 20px;
+           
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 0;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>I'm Mariel Saraum and this is my Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#" onclick="navigateTo('about')">About</a></li>
+                    <li><a href="#" onclick="navigateTo('repositories')">Repositories</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <main id="home" class="container">
+        <h2>welcome and feel free to my portfolio</h2>
+        <p>"Life is really simple, but we insist on making it complicated." </p>
+        <img class="pic" src="w.gif" alt="">
+    </main>
+    <main id="about" class="container" style="display: none;">
+        <h2 class="container">About Me</h2>
+        <br><br><br>
+        <img class="pic" src="q.jpg" alt="">
+        <h5>Name:marail saraum</h5>
+        <h5>status: single</h5>
+        <h5>nationality: pinay</h5>
+        <h5>Class: 2nd year I.T Student</h5>
+        <h5>Age: 19</h5>
+        <h5>Birthday: </h5>
+        <h5>GitHub Codename: <a href=""></a></h5>
+
+        <br>
+        <h3>Skills:</h3>
+        <br>
+        <h5>"writting story"</5>
+        <h5>"badminton"</h5>
+        <h5>"dancing"</h5>
+        <h5>"sing"</h5>
+        <h5>"editing"</h5>
+    </main>
+
+    <main id="repositories" class="container">
+        <div class="container">
+        <h2>Repositories</h2>
+        </div>
+
+        <br><br>
+        
+        <div class="project">
+            <h3><a href=""></a></h3>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
